@@ -22,7 +22,7 @@ const Intro = () => {
             }}
             src={developerPicture}
           />
-          <a href="https://lvamsavarthan.github.io/lvstore">
+          <a href="https://lvamsavarthan.github.io">
             <p id="name">
               Amsavarthan <span id="initial">Lv</span>
               <span style={{ fontSize: "30px", color: "#00f6ab" }}>.</span>
