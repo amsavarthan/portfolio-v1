@@ -1,0 +1,237 @@
+/*Commons*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #2d2e32;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+#icon:hover {
+  color: #00f6ab;
+}
+
+#icon {
+  color: #ffffff;
+}
+
+/*Section Intro*/
+
+nav {
+  padding-left: 60px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.intro-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro-page {
+  min-height: 100vh;
+  max-height: 100%;
+  background-color: #2d2e32;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#intro-body-desktop {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#intro-body-mobile {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: none;
+}
+
+#intro-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#intro-footer p {
+  margin: 10px;
+  padding-bottom: 10px;
+}
+
+#header-pic {
+  display: none;
+}
+
+#name {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+#email {
+  margin: 0;
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+#tagline {
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline;
+  background-color: #00f6ab;
+}
+
+#initial {
+  color: #aaaaaa;
+}
+
+/*Section Technology*/
+
+.skills-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-height: 100%;
+  background-color: #25262a;
+  flex-direction: column;
+}
+
+/*Section Intro*/
+
+.about-page {
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 100vh;
+  max-height: 100%;
+  background-color: #25262a;
+  flex-direction: row;
+}
+
+/*Section Projects*/
+
+.projects-page {
+  padding-top: 40px;
+  padding-bottom: 100px;
+  min-height: 100vh;
+  max-height: 100%;
+  background-color: #25262a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*Section Footer*/
+
+.footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  background-color: #25262a;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#mobile-footer {
+  display: none;
+}
+
+#desktop-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+/*Section Contact*/
+
+#contact-page {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  max-height: 100%;
+}
+
+/* This styles are for devices other than desktop screens for good UI/UX */
+@media screen and (max-width: 800px) {
+  /* Section Intro */
+
+  nav {
+    padding-left: 20px;
+  }
+
+  #header-pic {
+    display: inline;
+    visibility: visible;
+  }
+
+  #intro-body-mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #intro-body-desktop {
+    display: none;
+  }
+
+  /* Section Contact */
+
+  #contact-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #contact-svg {
+    display: none;
+  }
+
+  /* Section Footer */
+
+  #desktop-footer {
+    display: none;
+  }
+
+  #mobile-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  /* Section Technology, Section Projects */
+
+  .skills-page,
+  .projects-page {
+    padding-top: 60px;
+    padding-bottom: 40px;
+  }
+
+  /* Section Intro */
+
+  .about-page {
+    display: flex;
+    flex-direction: column;
+  }
+}
